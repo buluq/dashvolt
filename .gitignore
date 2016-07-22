@@ -1,0 +1,12 @@
+# Ignoring framework files.
+#
+lib/
+tmp/*.php
+
+# Ignoring system environment.
+#
+jvmit/
+post-generator/
+taskboard/
+app.ini
+error_log

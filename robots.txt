@@ -1,0 +1,6 @@
+# robots.txt for dashboard.web.id
+
+# No robots should visit this site further.
+#
+User-agent: *
+Disallow: /
