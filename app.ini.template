@@ -1,0 +1,29 @@
+; Configuration file for Dashboard Web Limavolt
+
+; Global configuration section.
+[globals]
+AUTOLOAD    = func/
+DEBUG       = 0
+DEVMODE     = 0
+UI          = res/sys/ui/; res/ui/; res/sys/page/
+
+; Aplication routing handler section.
+[routes]
+GET /       = Router->getRoute
+
+[maps]
+/file/@dir  = Mapper
+
+; Application specific configuration section.
+[app]
+name        = "Dashvolt"
+version     = "0.0.1"
+contributor = "Sunu Haeriadi"
+
+; Site specific configuration section.
+[site]
+name        = ""
+
+[site.files]
+
+[site.services]

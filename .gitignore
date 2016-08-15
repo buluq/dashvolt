@@ -5,6 +5,7 @@ tmp/*.php
 
 # Ignoring system environment.
 #
+.directory
 jvmit/
 post-generator/
 taskboard/

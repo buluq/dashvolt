@@ -1,5 +1,5 @@
-<div class="row">
-	<div id="iframe-container" class="col s12">
+<div class="uk-grid">
+	<div id="iframe-container" class="uk-width-1-1">
 		<iframe
 			id="forum_embed"
 			src="javascript:void(0)"
@@ -15,7 +15,7 @@
 			var embededPage = document.querySelector("#forum_embed");
 			embededPage.style.display = "block";
 			embededPage.style.width = "100%";
-			embededPage.style.minHeight= "80vh";
+			embededPage.style.minHeight= "90vh";
 		</script>
 	</div>
 </div>
