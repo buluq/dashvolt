@@ -7,7 +7,7 @@
 			<include href="page-navbar.php" />
 		</header>
 
-		<main>
+		<main class="uk-margin-top">
 			<include href="{{ @page . '.php' }}" />
 		</main>
 

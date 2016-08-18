@@ -53,7 +53,7 @@ class Router {
 
 		switch ($route) {
 			case '/':
-				$presenter->setView('forum');
+				$presenter->setView('home');
 			break;
 
 			case '/forum':

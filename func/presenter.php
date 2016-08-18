@@ -58,6 +58,10 @@ class Presenter {
 	 */
 	public function setView($type, $url = '') {
 		switch ($type) {
+			case 'home':
+				$this->getPage('home');
+			break;
+
 			case 'forum':
 				$this->getPage('forum');
 

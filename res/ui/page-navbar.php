@@ -6,7 +6,6 @@
 	<ul class="uk-navbar-nav">
 		<li><a href="/forum" title="Forum Tim IT Java Multi Mandiri"><span class="uk-icon-comments"></span> Forum</a></li>
 
-		<li><a href="/file/glite" title="Berkas proyek GLite"><span class="uk-icon-server"></span> GLite</a></li>
 
 		<li><a href="/file/multimedia" title="Request multimedia"><span class="uk-icon-cubes"></span> Multimedia</a></li>
 
@@ -15,8 +14,9 @@
 
 			<div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom">
 				<ul class="uk-nav uk-nav-navbar">
-					<li><a href="/file/journal">Jurnal Harian</a></li>
-					<li><a href="/file/csr">Customer Service Representative</a></li>
+					<li><a href="/file/journal"><span class="uk-icon-book"></span> Jurnal Harian</a></li>
+					<li><a href="/file/csr"><span class="uk-icon-users"></span> Jurnal CSR</a></li>
+					<li><a href="/file/glite" title="Berkas proyek GLite"><span class="uk-icon-server"></span> Berkas proyek GLite</a></li>
 				</ul>
 			</div>
 		</li>
