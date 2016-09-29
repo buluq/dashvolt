@@ -60,6 +60,14 @@ class Router {
 				$presenter->setView('forum');
 			break;
 
+			case '/forum/@url':
+				$url  = Base::instance()->get('PARAMS.url');
+				$ref  = 'site.files.' . $url;
+				$file = Base::instance()->get($ref);
+
+				$presenter->setView('forum', $file);
+			break;
+
 			case '/file/@dir':
 				$dir  = Base::instance()->get('PARAMS.dir');
 				$ref  = 'site.files.' . $dir;

@@ -7,7 +7,7 @@
 		</iframe>
 
 		<script type="text/javascript">
-			document.getElementById('forum_embed').src = 'https://groups.google.com/forum/embed/?place=forum/jvmit'
+			document.getElementById('forum_embed').src = '{{ @url }}'
 			+ '&showsearch=true&showpopout=true&showtabs=false'
 			+ '&parenturl='
 			+ encodeURIComponent(window.location.href);
