@@ -22,7 +22,7 @@
 
 				<p>{{ @data.3 | raw }}</p>
 
-				<a class="uk-button uk-button-primary uk-width-1-1" href="/forum/{{ @data.0 }}"><span class="uk-icon-chevron-circle-right"></span> Minta request {{ @data.1 }}</a>
+				<a class="uk-button uk-button-primary uk-width-1-1" href="/file/{{ @data.0 }}"><span class="uk-icon-chevron-circle-right"></span> Minta request {{ @data.1 }}</a>
 			</div>
 		</li>
 	</repeat>
@@ -34,7 +34,7 @@
 
 				<p>{{ @data.3 | raw }}</p>
 
-				<a class="uk-button uk-button-primary uk-width-1-1" href="/forum/{{ @data.0 }}"><span class="uk-icon-chevron-circle-right"></span> Akses file {{ @data.1 }}</a>
+				<a class="uk-button uk-button-primary uk-width-1-1" href="/file/{{ @data.0 }}"><span class="uk-icon-chevron-circle-right"></span> Akses file {{ @data.1 }}</a>
 			</div>
 		</li>
 	</repeat>

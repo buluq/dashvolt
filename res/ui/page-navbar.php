@@ -22,7 +22,7 @@
 			<div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom">
 				<ul class="uk-nav uk-nav-navbar">
 					<repeat group="{{ @site.services.request }}" value="{{ @data }}">
-						<li><a href="/forum/{{ @data.0 }}"><span class="{{ @data.2 }}"></span> {{ @data.1 }}</a></li>
+						<li><a href="/file/{{ @data.0 }}"><span class="{{ @data.2 }}"></span> {{ @data.1 }}</a></li>
 					</repeat>
 				</ul>
 			</div>
@@ -34,7 +34,7 @@
 			<div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom">
 				<ul class="uk-nav uk-nav-navbar">
 					<repeat group="{{ @site.services.file }}" value="{{ @data }}">
-						<li><a href="/forum/{{ @data.0 }}"><span class="{{ @data.2 }}"></span> {{ @data.1 }}</a></li>
+						<li><a href="/file/{{ @data.0 }}"><span class="{{ @data.2 }}"></span> {{ @data.1 }}</a></li>
 					</repeat>
 				</ul>
 			</div>

@@ -11,3 +11,10 @@ post-generator/
 taskboard/
 app.ini
 error_log
+
+# Ignoring backup and swap file
+*.bak
+*.kate-swp
+*.old
+*.swp
+
