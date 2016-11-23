@@ -57,30 +57,30 @@ class Presenter {
 	 * @param string $url  Document to be embeded.
 	 */
 	public function setView($type, $url = '') {
-		switch ($type) {
-			case 'home':
-				$this->getPage('home');
-			break;
+		$this->getPage($type);
 
-			case 'forum':
-				$this->getPage('forum');
+		if (isset($url)) {
+			$this->getGoogleFile($url);
+		}
+	}
 
-				if (isset($url)) {
-					$this->getGoogleFile($url);
-				}
-			break;
+	public function setCopyrightYear() {
+		$year = Base::instance()->get('site.year');
 
-			case 'file':
-				$this->getPage('file');
+		if (intval($year) == 'auto') {
+			Base::instance()->set('site.copyyear', date('Y'));
+		}
 
-				if (isset($url)) {
-					$this->getGoogleFile($url);
-				}
-			break;
+		if (intval($year) == date('Y')) {
+			Base::instance()->set('site.copyyear', intval($year));
+		}
 
-			default:
-				$this->getPage('error-404');
-			break;
+		if (intval($year) < date('Y')) {
+			Base::instance()->set('site.copyyear', intval($year) . ' - ' . date('Y'));
+		}
+
+		if (intval($year) > date('Y')) {
+			Base::instance()->set('site.copyyear', date('Y'));
 		}
 	}
 }

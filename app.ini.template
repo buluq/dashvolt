@@ -5,7 +5,7 @@
 AUTOLOAD    = func/
 DEBUG       = 0
 DEVMODE     = 0
-UI          = res/sys/ui/; res/ui/; res/sys/page/
+UI          = res/ui/; res/page/
 
 ; Aplication routing handler section.
 [routes]

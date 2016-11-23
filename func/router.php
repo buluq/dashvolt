@@ -48,33 +48,39 @@ class Router {
 	 * @since 0.0.1
 	 */
 	public function getRoute() {
-		$presenter = new Presenter();
-		$route     = Base::instance()->get('PATTERN');
+		$route = Base::instance()->get('PATTERN');
 
 		switch ($route) {
-			case '/':
-				$presenter->setView('home');
-			break;
-
-			case '/forum':
-				$presenter->setView('forum');
-			break;
-
 			case '/forum/@url':
-				$url  = Base::instance()->get('PARAMS.url');
-				$ref  = 'site.files.' . $url;
-				$file = Base::instance()->get($ref);
-
-				$presenter->setView('forum', $file);
+				$service_name = 'forum';
 			break;
 
-			case '/file/@dir':
-				$dir  = Base::instance()->get('PARAMS.dir');
-				$ref  = 'site.files.' . $dir;
-				$file = Base::instance()->get($ref);
-
-				$presenter->setView('file', $file);
+			case '/file/@url':
+				$service_name = 'file';
 			break;
+
+			default:
+				$service_name = 'home';
+			break;
+		}
+
+		$this->getService($service_name);
+	}
+
+	public function getService($service_name) {
+		$presenter = new Presenter();
+
+		$presenter->setCopyrightYear();
+
+		if ($service_name == 'home') {
+			$presenter->setView($service_name, 'home');
+		}
+		else {
+			$url  = Base::instance()->get('PARAMS.url');
+			$ref  = 'site.files.' . $url;
+			$file = Base::instance()->get($ref);
+
+			$presenter->setView($service_name, $file);
 		}
 	}
 }
